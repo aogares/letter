@@ -1,7 +1,7 @@
 body {
 	background-color: #8e165e;
-background-image: linear-gradient(194deg, #8e165e 0%, #5a1f82 33%, #0e4263 66%, #212342 100%);
-
+	background-image: linear-gradient(194deg, #8e165e 0%, #5a1f82 33%, #0e4263 66%, #212342 100%);
+	margin: 0;
 }
 
 h1,
@@ -61,7 +61,8 @@ body {
 .message {
 	padding: 20px;
 	background-color: #000000;
-	min-width: 400px;
+	min-width: 300px; 
+ 	max-width: 600px;
 	height: 75%;
 	position: absolute;
 	left: 50%;
@@ -78,9 +79,15 @@ body {
 	border-radius: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .message {
+    width: 80%; /* Adjust the width for smaller screens */
+    max-width: none; /* Remove maximum width for smaller screens */
+  }
+
 .signature img {
-	max-width: 100%;
-	height: 100px;
+	max-width: 80%; 
+    	height: auto;
 	position: relative;
 	margin-left: 30px;
 	margin-bottom: 0.1px;
