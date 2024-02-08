@@ -160,12 +160,16 @@ body {
 .openNor {
 	animation-direction: normal;
 	animation-play-state: running;
+	background-color: #8e165e;
+	background-image: linear-gradient(194deg, #8e165e 0%, #5a1f82 33%, #0e4263 66%, #212342 100%);
 	
 }
 
 .closeNor {
 	animation-direction: reverse;
 	animation-play-state: running;
+	background-color: #FAACA8;
+	background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 	
 }
 
@@ -188,8 +192,7 @@ body {
 	animation-timing-function: linear;
 	animation-play-state: running;
 	animation-fill-mode: forwards;
-	background-color: #8e165e;
-	background-image: linear-gradient(194deg, #8e165e 0%, #5a1f82 33%, #0e4263 66%, #212342 100%);
+	
 }
 
 .closeHer {
@@ -199,8 +202,7 @@ body {
 	animation-play-state: running;
 	animation-direction: reverse;
 	animation-fill-mode: forwards;
-	background-color: #FAACA8;
-	background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+	
 }
 
 .beating>img {
