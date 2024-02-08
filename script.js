@@ -1,18 +1,17 @@
 $("#messageState").on("change", (x) => {
-    $(".message").removeClass("openNor").removeClass("closeNor");
-    if ($("#messageState").is(":checked")) {
-        $(".message").removeClass("closed").removeClass("no-anim").addClass("openNor");
-        $(".heart").removeClass("closeHer").removeClass("openedHer").addClass("openHer");
-        $(".container").stop().css({"background": "linear-gradient(194deg, #8e165e 0%, #5a1f82 33%, #0e4263 66%, #212342 100%)"});
-        console.log("Abrindo");
-    } else {
-        $(".message").removeClass("no-anim").addClass("closeNor");
-        $(".heart").removeClass("openHer").removeClass("openedHer").addClass("closeHer");
-        $(".container").stop().css({"background": "linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)"});
-        console.log("fechando");
-    }
+	$(".message").removeClass("openNor").removeClass("closeNor");
+	if ($("#messageState").is(":checked")) {
+		$(".message").removeClass("closed").removeClass("no-anim").addClass("openNor");
+		$(".heart").removeClass("closeHer").removeClass("openedHer").addClass("openHer");
+		$(".container").stop().animate({"backgroundColor": "#DEB6C2"}, 2000);
+		console.log("Abrindo");
+	} else {
+		$(".message").removeClass("no-anim").addClass("closeNor");
+		$(".heart").removeClass("openHer").removeClass("openedHer").addClass("closeHer");
+		$(".container").stop().animate({"backgroundColor": "#23386C"}, 2000);
+		console.log("fechando");
+	}
 });
-
 
 $(".message").on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
 	console.log("Animation End");
