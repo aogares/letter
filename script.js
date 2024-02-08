@@ -3,12 +3,18 @@ $("#messageState").on("change", (x) => {
 	if ($("#messageState").is(":checked")) {
 		$(".message").removeClass("closed").removeClass("no-anim").addClass("openNor");
 		$(".heart").removeClass("closeHer").removeClass("openedHer").addClass("openHer");
-		$(".container").stop().animate({"backgroundColor": "#FAACA8"}, 2000);
+		$(".container").stop().css({
+			"background-color": "#FAACA8",
+			"background-image": "linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)"
+		}).animate({}, 2000); // You can pass an empty object or other properties if needed
 		console.log("Abrindo");
 	} else {
 		$(".message").removeClass("no-anim").addClass("closeNor");
 		$(".heart").removeClass("openHer").removeClass("openedHer").addClass("closeHer");
-		$(".container").stop().animate({"backgroundColor": "#8e165e"}, 2000);
+		$(".container").stop().css({
+			"background-color": "#fce4ec",
+			"background-image": "none" // Assuming you want to remove the background image
+		}).animate({}, 2000); // You can pass an empty object or other properties if needed
 		console.log("fechando");
 	}
 });
