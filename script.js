@@ -3,7 +3,7 @@ $("#messageState").on("change", (x) => {
 	if ($("#messageState").is(":checked")) {
 		$(".message").removeClass("closed").removeClass("no-anim").addClass("openNor");
 		$(".heart").removeClass("closeHer").removeClass("openedHer").addClass("openHer");
-		$(".container").stop().animate({"backgroundColor": "#FAACA8"}{"backgroundImage": "linear-gradient(194deg, #8e165e 0%, #5a1f82 33%, #0e4263 66%, #212342 100%)"}, 2000);
+		$(".container").stop().animate({"backgroundColor": "#f48fb1"}, 2000);
 		console.log("Abrindo");
 	} else {
 		$(".message").removeClass("no-anim").addClass("closeNor");
