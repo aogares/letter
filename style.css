@@ -12,6 +12,10 @@ p {
 	margin-top: 0.1em;
 }
 
+.music {
+	display:none;
+}
+
 hr {
 	position: relative;
 	margin-top: -1em;
